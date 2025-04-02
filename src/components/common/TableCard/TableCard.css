@@ -1,0 +1,144 @@
+.custom-table {
+  background-color: #1a1d27;
+  color: #ffffff;
+}
+
+/* Header styles */
+.custom-table .ant-table-thead > tr > th {
+  background-color: #2a2e39 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(239, 242, 244, 0.1);
+  padding: 8px 16px !important;
+  height: 48px !important;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+/* Add specific widths for certain columns */
+.custom-table .ant-table-thead > tr > th:nth-child(1) {
+  min-width: 70px;
+}
+
+.custom-table .ant-table-thead > tr > th:nth-child(2),
+.custom-table .ant-table-thead > tr > th:nth-child(3),
+.custom-table .ant-table-thead > tr > th:nth-child(4) {
+  min-width: 70px;
+}
+
+.custom-table .ant-table-thead > tr > th:nth-child(5) {
+  min-width: 140px;
+}
+
+.custom-table .ant-table-thead > tr > th:last-child {
+  min-width: 100px;
+}
+
+/* Remove header hover effect */
+.custom-table .ant-table-thead > tr > th:hover {
+  background-color: #2a2e39 !important;
+  color: #9ca3af !important;
+}
+
+/* Body styles */
+.custom-table .ant-table-tbody > tr > td {
+  background-color: #1E2530;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(239, 242, 244, 0.1);
+  padding: 12px 10px !important;
+  height: 36px !important;
+  font-size: 14px;
+}
+
+/* Row hover styles */
+.custom-table .ant-table-tbody > tr:hover > td {
+  background-color: #2a2e39 !important;
+  cursor: pointer;
+}
+
+/* Pagination container */
+.custom-table .ant-pagination {
+  margin: 4px 0 !important;
+  padding: 4px 0 !important;
+  height: 32px !important;
+  line-height: 32px !important;
+}
+
+/* Pagination items */
+.custom-table .ant-pagination-item {
+  background-color: #2a2e39;
+  border-color: rgba(239, 242, 244, 0.1);
+  min-width: 24px !important;
+  height: 24px !important;
+  line-height: 22px !important;
+  margin: 0 4px !important;
+}
+
+.custom-table .ant-pagination-item a {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.custom-table .ant-pagination-item-active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.custom-table .ant-pagination-item-active a {
+  color: #ffffff !important;
+}
+
+/* Pagination navigation buttons */
+.custom-table .ant-pagination-prev,
+.custom-table .ant-pagination-next {
+  min-width: 24px !important;
+  height: 24px !important;
+  line-height: 24px !important;
+  margin: 0 4px !important;
+}
+
+.custom-table .ant-pagination-prev button,
+.custom-table .ant-pagination-next button {
+  background-color: #2a2e39;
+  border-color: rgba(239, 242, 244, 0.1);
+  color: #9ca3af;
+  height: 24px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-table .ant-pagination-prev button:hover,
+.custom-table .ant-pagination-next button:hover {
+  background-color: #2a2e39;
+  border-color: rgba(239, 242, 244, 0.1);
+  color: #ffffff;
+}
+
+/* Table cell content alignment */
+.custom-table .ant-table-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Remove column separators */
+.custom-table .ant-table-cell::before {
+  display: none !important;
+}
+
+/* Adjust table container */
+.custom-table .ant-table {
+  background-color: #1a1d27 !important;
+}
+
+.custom-table .ant-table-column-sorter {
+  color: #ffffff;
+}
+
+.custom-table .ant-table-column-sorter-up.active,
+.custom-table .ant-table-column-sorter-down.active {
+  color: #3b82f6;
+}

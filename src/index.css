@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import "@flaticon/flaticon-uicons/css/all/all";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: #1a1d27;
+  color: #ffffff;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e2230;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Progress circles animation */
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.progress-circle path:nth-child(2) {
+  animation: progress 1s ease-out forwards;
+}
+
+/* Table styles */
+.table-row-hover:hover {
+  background-color: #2a2e39;
+}
