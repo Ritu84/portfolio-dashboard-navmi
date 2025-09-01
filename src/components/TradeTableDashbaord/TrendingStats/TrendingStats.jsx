@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Table } from 'antd';
 import uparrow from '../../../assets/Increase-gain-icon.svg'
 import downarrow from '../../../assets/decrease-loss-icon.svg'
 
